@@ -89,7 +89,7 @@ def servelParser(rutaPdf):
             nombres[i]           = pages[i][indexNombre+1:indexCI-1]
             rut[i]               = pages[i][indexCI+2:indexCI+2+len(nombres[i])]
             comuna[i]            = pages[i][indexComuna+2]
-            circunscripcion[i]   = pages[i][indexCirc+1:indexCirc+1+2*len(nombres[1]):2]
+            circunscripcion[i]   = pages[i][indexCirc+1:indexCirc+1+2*len(nombres[i]):2]
             direccion[i]         = pages[i][indexDomEle+1:indexDomEle+1+2*len(nombres[i]):2]
             provincia[i]         = str(pages[i][indexRegion+4]).replace(":","").lstrip()
             Region[i]            = str(pages[i][indexRegion+3]).replace(":","").lstrip()
